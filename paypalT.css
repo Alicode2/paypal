@@ -1,0 +1,17 @@
+.active-pay{
+    height: 90vh;
+    padding: 3rem;
+ }
+ .blue{
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+    
+ }
+ .safer{
+    margin-bottom: 2rem;
+ }
+ .blue .safer p{
+    font-size: 1.5rem;
+    width: 80vw;
+ }

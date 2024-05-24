@@ -1,0 +1,46 @@
+.nav-header nav .nav-list, .sign .sign-up{
+        display:none;
+        
+    }
+
+    .rows .min{
+        display:none;
+ }
+.paypal{
+    word-wrap: break-word;
+}
+ .connects-image span{
+    padding-left: 0;
+ }
+ .active-pay{
+    height: 90vh;
+    padding: 3rem;
+ }
+ .blue{
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+    
+ }
+ .safer{
+    margin-bottom: 2rem;
+ }
+ .blue .safer p{
+    font-size: 1.2rem;
+    width: 80vw;
+ }
+ .signup-active .active-sign .text{
+    display: none;
+ }
+  .active-sign .hero-sign{
+    padding: 1.5rem 8rem;
+    border-radius: 24px;
+  }
+
+  footer{
+    padding: 0 5rem;
+  }
+
+  .btn{
+    margin-top: 3rem;
+  }
