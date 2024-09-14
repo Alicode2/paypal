@@ -1,301 +1,356 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html{
-    font-size: 62.5%;
+html {
+  font-size: 62.5%;
 }
 
-body{
-    font-family: helvetica, sans-serif ;
-    overflow-x: hidden;
+body {
+  font-family: helvetica, sans-serif;
+  overflow-x: hidden;
 }
 
-.nav-header{
-    position: fixed;
-    top: 0;
-    background: #fff;
-    width: 100vw;
-    z-index: 99;
+.nav-header {
+  position: fixed;
+  top: 0;
+  background: #fff;
+  width: 100vw;
+  z-index: 99;
 }
-.nav-header nav{
+.nav-header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 10rem;
+}
+
+nav ul {
+  list-style: none;
+}
+li button {
+  border: none;
+  font-size: 1.8rem;
+  background: transparent;
+  cursor: pointer;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0.625rem;
+}
+
+button:hover {
+  border-bottom-color: #0070ba;
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+}
+
+nav .sign .login {
+  border: 1px solid #0070ba;
+  text-decoration: none;
+  color: #0070ba;
+  max-width: 320px;
+  text-align: center;
+  padding: 1rem 2rem;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-right: 0.6rem;
+}
+nav .sign .sign-up {
+  border: 1px solid #0070ba;
+  text-decoration: none;
+  background: #0070ba;
+  color: #fff;
+  max-width: 320px;
+  text-align: center;
+  padding: 1rem 2rem;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.hero-image {
+  background-image: url("https://www.paypalobjects.com/webstatic/en_GB/mktg/wright/home/homepage-hero-1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.hero .hero-write {
+  text-align: center;
+  margin-top: 26rem;
+  color: #fff;
+}
+.hero-write .simple {
+  font-size: 4.5rem;
+  margin-bottom: 8rem;
+  font-weight: 400;
+}
+
+.hero-write .hero-sign {
+  text-decoration: none;
+  background: #0070ba;
+  text-align: center;
+  padding: 1.5rem 12rem;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+.desc {
+  margin-top: 5rem;
+  font-size: 1.5rem;
+}
+
+.desc a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+.desc a:hover {
+  text-decoration: underline;
+}
+.content {
+  position: relative;
+  top: 13rem;
+}
+.pay-every {
+  text-align: center;
+  padding-top: 6rem;
+  color: #2c2e2f;
+}
+.everyone {
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 1.25;
+  margin-bottom: 5rem;
+}
+.individual {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.find {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 4rem;
+}
+
+.learn-more {
+  text-decoration: none;
+  color: #0070ba;
+  border: 1px solid #0070ba;
+  border-radius: 25px;
+  padding: 1.8rem 8rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.rows {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 5rem;
+}
+.connects {
+  background: #f7f9fa;
+  color: #666666;
+  margin-top: 10rem;
+  height: 100vh;
+}
+
+.connect {
+  text-align: center;
+  padding-top: 6rem;
+}
+
+.connect .buyer a {
+  border-bottom: 1px solid #666666;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #666666;
+  padding: 0.625rem;
+}
+
+.connects-image span {
+  text-align: center;
+  padding-left: 3rem;
+}
+.circle,
+.step-text {
+  display: inline-block;
+}
+.circle {
+  padding: 0.688rem 1.125rem;
+  border: 1px solid #666666;
+  border-radius: 50%;
+  font-weight: 700;
+  margin-right: 0.8rem;
+  vertical-align: top;
+}
+.step-text {
+  width: 20vw;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+.btn {
+  text-align: center;
+  margin-top: 6rem;
+}
+
+.active-pay {
+  background-color: #009cde;
+  color: #fff;
+  background-image: radial-gradient(
+    circle farthest-side at center bottom,
+    #009cde,
+    #003087 0
+  );
+  padding-top: 6rem;
+  height: 70vh;
+}
+.everyone {
+  text-align: center;
+  font-size: 2.857rem;
+}
+
+.safer h3 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.safer p {
+  font-size: 1.5rem;
+  line-height: 1.9;
+  padding-top: 0.25rem;
+  padding-bottom: 0.88rem;
+  width: 50rem;
+}
+
+.safer a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  opacity: 0.8;
+}
+.signup-active {
+  background-color: #f7f9fa;
+  color: #666;
+  text-align: center;
+  padding: 5.9rem 0;
+}
+.active-up {
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1.25;
+  margin-bottom: 3rem;
+}
+.active-sign .text {
+  width: 23rem;
+  padding: 1.1rem 0.6rem;
+  border: none;
+  outline: none;
+}
+
+.active-sign .hero-sign {
+  background: #0070ba;
+  padding: 1.2rem 0.6rem;
+  color: #fff;
+}
+
+footer {
+  margin-top: 20rem;
+  padding: 0 10rem;
+}
+footer ul {
+  list-style: none;
+  padding-bottom: 1rem;
+}
+
+footer ul li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+.foot-s {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+
+footer ul li a {
+  font-size: 1.3rem;
+  color: #2c2e2f;
+}
+@media (max-width: 480px) {
+  .nav-header nav .nav-list,
+  .sign .sign-up {
+    display: none;
+  }
+
+  .nav-header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 3rem 10rem;
-}
-
-nav ul{
-    list-style: none;
-}
-li button{
-    border: none;
-    font-size: 1.8rem;
-    background: transparent;
-    cursor: pointer;
-    font-weight: 700;
-    text-transform: uppercase;
-    padding: 0.625rem;
-}
-
-button:hover{
-    
-    border-bottom-color: #0070ba;
-    border-bottom-width: 3px;
-    border-bottom-style: solid;
-}
-
-nav .sign .login{
-    border: 1px solid #0070ba;
-    text-decoration: none;
-    color: #0070ba;
-    max-width: 320px;
-    text-align: center;
-    padding: 1rem 2rem;
-    border-radius: 25px;
-    font-size: 1rem;
-    font-weight: 700;
-    margin-right: 0.6rem;
-}
-nav .sign .sign-up{
-    border: 1px solid #0070ba;
-    text-decoration: none;
-    background: #0070ba;
-    color: #fff;
-    max-width: 320px;
-    text-align: center;
-    padding: 1rem 2rem;
-    border-radius: 25px;
-    font-size: 1rem;
-    font-weight: 700;
-}
-
-
-.hero-image{
-    background-image: url("https://www.paypalobjects.com/webstatic/en_GB/mktg/wright/home/homepage-hero-1x.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    z-index: -1;
-}
-
-.hero .hero-write{
-    text-align: center;
-    margin-top: 26rem;
-    color: #fff;
-}
-.hero-write .simple{
-    font-size: 4.5rem;
-    margin-bottom: 8rem;
-    font-weight: 400;
-}
-
-.hero-write .hero-sign{
-    text-decoration: none;
-    background: #0070ba;
-    text-align: center;
-    padding: 1.5rem 12rem;
-    border-radius: 25px;
-    color: #fff;
-    font-size: 1.3rem;
-}
-
-.desc{
-    margin-top: 5rem;
-    font-size: 1.5rem;
-}
-
-.desc a{
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-.desc a:hover{
-    text-decoration: underline;
-}
-.content{
-    position: relative;
-    top: 13rem;
-}
-.pay-every{
-    text-align: center;
-    padding-top: 6rem;
-    color: #2C2E2F;
-}
-.everyone{
-    font-size: 3.5rem;
-    font-weight: 400;
-    line-height: 1.25;
-    margin-bottom: 5rem;
-}
-.individual{
-    font-size: 2.5rem;
-    font-weight: 400;
-    margin-top: 2rem;
+  }
+  .hero-image {
+    height: 80vh;
+  }
+  .rows .min {
+    display: none;
+  }
+  .paypal {
+    word-wrap: break-word;
+  }
+  .connects-image span {
+    padding-left: 0;
+  }
+  .active-pay {
+    height: 90vh;
+    padding: 3rem;
+  }
+  .blue {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+  }
+  .safer {
     margin-bottom: 2rem;
-    
-}
-
-.find{
-    font-size: 1.5rem;
-    font-weight: 400;
-    margin-bottom: 4rem;
-}
-
-.learn-more{
-    text-decoration: none;
-    color: #0070ba;
-    border: 1px solid #0070ba;
-    border-radius: 25px;
-    padding: 1.8rem 8rem;
-    font-size: 1.3rem;
-    font-weight: bold;
-}
-
-.rows{
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 5rem;
-}
-.connects{
-    background: #F7F9FA;
-    color: #666666;
-    margin-top: 10rem;
-    height: 100vh;
-}
-
-.connect{
-    text-align: center;
-    padding-top: 6rem;
-}
-
-.connect .buyer a{
-    border-bottom: 1px solid #666666;
-    text-decoration: none;
-    font-size: 1.3rem;
-    font-weight: 700;
-    color: #666666;
-    padding: 0.625rem;
-}
-
-.connects-image span{
-    text-align: center;
-    padding-left: 3rem;
-}
-.circle, .step-text{
-    display: inline-block;
-    
-}
-.circle{
-    padding: 0.688rem 1.125rem;
-    border: 1px solid #666666;
-    border-radius: 50%;
-    font-weight: 700;
-    margin-right: 0.8rem;
-    vertical-align: top;
-}
-.step-text{
-    width: 20vw;
+  }
+  .blue .safer p {
     font-size: 1.2rem;
-    line-height: 1.5;
-}
-.btn{
-    text-align: center;
-    margin-top: 6rem;
-}
+    width: 80vw;
+  }
+  .signup-active .active-sign .text {
+    display: none;
+  }
+  .active-sign .hero-sign {
+    padding: 1.5rem 8rem;
+    border-radius: 24px;
+  }
 
-.active-pay{
-    background-color: #009cde;
-    color: #fff;
-    background-image: radial-gradient(circle farthest-side at center bottom,#009cde,#003087 0);
-    padding-top: 6rem;
-    height: 70vh;
-}
-.everyone{
-    text-align: center;
-    font-size: 2.857rem;
-}
+  footer {
+    padding: 0 5rem;
+  }
 
+  .btn {
+    margin-top: 3rem;
+  }
 
-.safer h3{
-    font-size: 3rem;
-    font-weight: 400;
+  .content {
+    top: 20rem;
+  }
 }
-
-.safer p{
-    font-size: 1.5rem;
-    line-height: 1.9;
-    padding-top: 0.25rem;
-    padding-bottom: 0.88rem;
-    width: 50rem;
-}
-
-.safer a{
-    text-decoration: none;
-    font-weight: 700;
-    color: #fff;
-    font-size: 1.3rem;
-    font-weight: bold;
-    
-}
-a{
-    text-decoration: none;
-}
-a:hover{
-    opacity: .8;
-}
-.signup-active{
-    background-color: #f7f9fa;
-    color: #666;
-    text-align: center;
-    padding: 5.9rem 0;
-}
-.active-up{
-    font-size: 3rem;
-    font-weight: 400;
-    line-height: 1.25;
-    margin-bottom: 3rem;
-}
-.active-sign .text{
-    width: 23rem;
-    padding: 1.1rem 0.6rem;
-    border: none;
-    outline: none;
-}
-
-.active-sign .hero-sign{
-    background: #0070ba;
-    padding: 1.2rem 0.6rem;
-    color: #fff;
-
-}
-
-footer{
-    margin-top: 20rem;
-    padding: 0 10rem;
-}
-footer ul{
-    list-style: none;
-    padding-bottom: 1rem;
-}
-
-footer ul li{
-    display: inline-block;
-    margin-right: 1rem;
-}
-.foot-s{
-    display: flex;
-    justify-content: space-between;
-    padding-top: 1rem;
-}
-
-footer ul li a{
-    font-size: 1.3rem;
-    color: #2C2E2F;
-}
-
