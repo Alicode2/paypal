@@ -319,7 +319,7 @@ footer ul li a {
     padding-left: 0;
   }
   .active-pay {
-    height: 90vh;
+    height: 70vh;
     padding: 3rem;
   }
   .blue {
@@ -352,5 +352,8 @@ footer ul li a {
 
   .content {
     top: 20rem;
+  }
+  .connects {
+    height: 80vh;
   }
 }
